@@ -12,34 +12,52 @@ Explain what each of the following lines does. Use the terminology you learned f
 	wait_for_user()
 
 Answer:
-
-
-
-
+	1 - imports everything from the TurtleWorld module
+	2 - creates a TurtleWorld assigned to world
+	3 - creates a turtle bob
+	4 - function that waits for the user to do something
 
 
 These questions pertain to the program you wrote in Week0.
 
 -- What are the arguments of polygon()?  What type is each argument?
 Answer:
+	polygon(t, length, n)
+	t - turtle; type - function
+	length - distance; type - integer
+	n - number of sides; type - integer
+
 
 -- What two turtle functions did you use to draw the sides of the polygon?
-Answer:
+Answer: 
+	fd()
+	lt()
 
 -- What are the arguments for polyline?  What type is each argument?
 Answer:
-
-
-
+	polyline(t, n, length, angle)
+	t - turtle; type - function
+	n - number of sides; type - integer
+	length - distance; type - integer
+	angle - angle of the turtle turn
 
 
 Suppose you wrote a function, center_circle(), that draws a circle of a given radius around the current location of the turtle and restores the turtle to its starting point.
 
 -- What turtle functions would you use to move the turtle from the center to the edge of the circle and get ready to call the original circle() function?
 Answer:
+	pu()
+	fd()
+	pd()
+	lt()
 
 -- Suppose the interface of this function requires the turtle to end up in the same place it started, facing in the same direction it started.
 Answer:
+	pu()
+	rt()
+	bk()
+	pd()
 
 -- What is this type of requirement called?
 Answer:
+	postcondition
